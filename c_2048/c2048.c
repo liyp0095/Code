@@ -302,7 +302,7 @@ int cnt_one(int y, int x)
 {
     int value = 1;
 
-                if(y - 1 > 0)  
+                if(y - 1 > 0)
                     a[y-1][x] ? 0 : value++;
                 if(y + 1 < 4)
                     a[y+1][x] ? 0 : value++;
