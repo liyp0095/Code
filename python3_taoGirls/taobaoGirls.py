@@ -85,10 +85,8 @@ def getperMMpageImg(MMURL,MMpath):
     ownObj = BeautifulSoup(owndriver.page_source,"lxml")
     perMMimgs = ownObj.findAll("img",{"src":re.compile(".*\.jpg")})#
     print(perMMimgs)
-    number = 2#图片计数器
+    number = 1#图片计数器
     for perMMimg in perMMimgs:
-        if number > 20:
-            break
         ImgPath = "https:"+str(perMMimg["src"])#处理成标准的超文本访问信息
         # print(ImgPath)
         try:
